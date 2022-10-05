@@ -24,7 +24,10 @@ const config = {
   plugins: [
     new MiniCssExtractPlugin(),
     new CopyPlugin({
-      patterns: [{ from: "src/index.html", to: "index.html" }],
+      patterns: [
+        { from: "src/index.html", to: "index.html" },
+        { from: "src/images/favicon-32x32.png", to: "favicon-32x32.png" },
+      ],
     }),
   ],
 };
