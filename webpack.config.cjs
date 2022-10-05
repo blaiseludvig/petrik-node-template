@@ -13,6 +13,15 @@ const config = {
     minimize: false,
   },
   mode: "development",
+  devServer: {
+    static: path.join(__dirname, "dist"),
+    watchFiles: ['src/**/*'],
+    host: "0.0.0.0",
+    port: "8080",
+    open: true,
+    compress: true,
+    hot: true,
+  },
   module: {
     rules: [
       {
